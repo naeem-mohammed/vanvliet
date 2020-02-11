@@ -1,5 +1,34 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='Services' />
+<cms:template title='Services'>
+	<cms:editable name='service_summary'
+       label="Service Summary"
+       type="richtext" height='50'>Bent u aanvullend verzekerd, dan gaat de rekening direct naar de zorg verzekeraar. Van Vliet Fysiotherapie is aangesloten bij iedere zorg verzekeraar in Nederland.</cms:editable>
+	   
+	   <cms:editable name='service_label_1'
+       label="Service Label 1"
+       type="text">Reguliere Zitting</cms:editable>
+	   
+	   <cms:editable name='service_cost_label_1'
+       label="Service Cost Label 1"
+       type="text">€34,50 per session</cms:editable>
+	   
+	   <cms:editable name='service_label_2'
+       label="Service Label 2"
+       type="text">Consultation</cms:editable>
+	   
+	   <cms:editable name='service_cost_label_2'
+       label="Service Cost Label 2"
+       type="text">€34,50 per session</cms:editable>
+	   
+	   <cms:editable name='service_label_3'
+       label="Service Label 3"
+       type="text">Speciale Service</cms:editable>
+	   
+	   <cms:editable name='service_cost_label_3'
+       label="Service Cost Label 3"
+       type="text">€34,50 per session</cms:editable>
+	   
+</cms:template>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +59,7 @@
                 <h2 class="mbr-section-title display-3">Onze Services</h2>
                 
 
-                <div class="lead"><p>Bent u aanvullend verzekerd, dan gaat de rekening direct naar de zorg verzekeraar. Van Vliet Fysiotherapie is aangesloten bij iedere zorg verzekeraar in Nederland.</p></div>
+                <div class="lead"><p><cms:show service_summary /></p></div>
                 <div class="row"><a class="btn btn-lg btn-secondary-outline fysio-info" href="physiotherapy.php">Fysiotherapie</a> <a class="btn btn-lg btn-secondary-outline fysio-info" href="dryneedling.php">Dry Needling</a>  <a class="btn btn-lg btn-secondary-outline fysio-info" href="contact.php#form1-18">Consult Now!</a></div>
             </div>
         </div>
@@ -44,9 +73,9 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="card text-xs-center">
-                    <div class="card-header bg-fysio">Reguliere Zitting</div>
+                    <div class="card-header bg-fysio"><cms:show service_label_1 /></div>
                     <div class="card-block lead">
-                        <span></span><span>€34,50</span> <small>per session</small>
+                        <span><cms:show service_cost_label_1 /></span>
                     </div>
                     <div><ul class="list-group list-group-flush"><li class="list-group-item"><strong>Treatment</strong></li></ul></div>
                     
@@ -54,9 +83,9 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="card text-xs-center">
-                    <div class="card-header bg-fysio">Consultation</div>
+                    <div class="card-header bg-fysio"><cms:show service_label_2 /></div>
                     <div class="card-block lead">
-                        <span></span><span></span> <small>€34,50&nbsp;per session</small>
+                        <span><cms:show service_cost_label_2 /></span>
                     </div>
                     <div><ul class="list-group list-group-flush"><li class="list-group-item"><strong>Screening</strong></li><li class="list-group-item"><strong>Intake</strong></li><li class="list-group-item"><strong>Onderzoek</strong></li></ul></div>
                     
@@ -64,9 +93,9 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="card text-xs-center">
-                    <div class="card-header bg-fysio">Speciale Service</div>
+                    <div class="card-header bg-fysio"><cms:show service_label_3 /></div>
                     <div class="card-block lead">
-                        <span></span><span></span> <small>€34,50 per session</small>
+                        <span><cms:show service_cost_label_3 /></span>
                     </div>
                     <div><ul class="list-group list-group-flush"><li class="list-group-item"><strong>Toeslag behandeling aan huis </strong></li></ul></div>
                     

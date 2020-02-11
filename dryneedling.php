@@ -1,46 +1,10 @@
 <?php require_once( 'couch/cms.php' ); ?>
-    <cms:template title='Dry Needling' />
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="assets/images/van-vliet-fysio-94x128.png" type="image/x-icon">
-        <meta name="description" content="">
-        <title>Services | Dry Needling</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext">
-        <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-        <link rel="stylesheet" href="assets/tether/tether.min.css">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/puritym/css/style.css">
-        <link rel="stylesheet" href="assets/dropdown-menu/style.light.css">
-        <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-    </head>
-
-<body>
-   <cms:embed 'header.html' />
-   
-   <section class="mbr-section mbr-section-nopadding mbr-after-navbar" id="msg-box4-1k" data-rv-view="40" style="background-color: #eae9e1; padding-top: 3rem; padding-bottom: 0rem;">
-      <div class="container">
-         <div class="row">
-            <div class="col-xs-12 col-lg-8 mbr-inner-padding mbr-table-cell-lg">
-               <h3 class="mbr-section-title display-4 text-xs-center"><u>Dry Needling</u></h3>
-               <div class="lead">
-                  <p>Nadat de klacht onderzocht is, en er komt naar voren dat een spierblokkade de herstel belemmerende factor is kan dry needling worden toegepast. Symptomen van een spierblokkade zijn verhardingen en/of uitstraling naar de desbetreffende plek (triggerpoint). <u>Let op, dit is nooit een op zichzelf staande behandeling, maar een onderdeel van de therapie. Dit wordt altijd overlegt met u als cliënt</u>. Met een naald behandelen we de triggerpoint. Er ontstaat als dit punt geraakt wordt een lokale twitch. Mensen beschrijven dit als een soort schokje. Hierdoor neem de mobiliteit van de spier toe in combinatie met een verbetering van de doorbloeding. Hierdoor neemt het herstelvermogen op de locatie toe.</</p>
-               </div>
-            </div>
-            <div class="col-xs-12 col-lg-4 mbr-table-cell-lg image-size" style="width: 50%;">
-               <div class="mbr-figure"><img src="assets/images/image005-1.jpg"></div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <section class="mbr-section mbr-after-navbar" id="content5-1i" data-rv-view="37" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 3rem;">
-      <div class="container">
-         <h5 class="mbr-section-title display-5 text-xs-center"><u>Voor wie is het geschikt</u></h5>
+    <cms:template title='Dry Needling' >
+	
+	<cms:editable name='dry_needling_text'
+       label="Dry Needling Text"
+       type="richtext">
+	<h5 class="mbr-section-title display-5 text-xs-center"><u>Voor wie is het geschikt</u></h5>
          <div class="lead">
             <p>Deze techniek is uitermate geschikt voor mensen met chronische spierproblemen. Iedere spier bestaat uit individuele schakels, hierdoorheen lopen bloedvaten voor de aanvoer en afvoer van brandstoffen. Als spiercellen lokaal hooggespannen en verkort zijn geeft dit meer compressie op de bloedvaten. Hierdoor ontstaat er een vermindering van doorbloeding op dit stuk. Dit is een herstel-belemmerende factor (doorbloeding) op die locatie en kan veel pijn geven. Dit kan de druppel zijn die de emmer doet overlopen en uit zich dan in een klacht. Door in deze spiercellen dry needling toe te passen ontstaat er een lokale twitch waarbij de spiercellen losschieten. Hierdoor neemt het doorbloedings-vermogen lokaal op de plek toe en draagt dit bij aan het herstel van de klacht. Er wordt gebruik gemaakt van accupunctuur naalden. Deze techniek valt binnen het domein van een fysiotherapeut. Dry needling is in deze visie niet hetzelfde als acupunctuur.
             </p>
@@ -82,6 +46,56 @@
             <p>Zoals eerder aangegeven is het van belang om te onderzoeken of spierverhardingen minimaal een deel van de oorzaak is. Is dit niet het geval dan heeft het ook vaak veel minder zin. Maar is de bijdrage van de triggerpoints groot dan worden er in die situatie goede resultaten verwacht. Vaak merken mensen het meteen of er verschil is. Over het algemeen weten we binnen 3 behandelingen of de therapie kan bijdragen aan het herstelproces . Reageert uw lichaam niet op de therapie dan wordt de behandeling gestaakt. Deze punten worden met u besproken zodat u weet waarop gelet moet worden.
             </p>
          </div>
+		</cms:editable>
+		
+		<cms:editable name='dry_needling_summary'
+		label="Dry Needling Summary"
+		type='text'>
+		Nadat de klacht onderzocht is, en er komt naar voren dat een spierblokkade de herstel belemmerende factor is kan dry needling worden toegepast. Symptomen van een spierblokkade zijn verhardingen en/of uitstraling naar de desbetreffende plek (triggerpoint). <u>Let op, dit is nooit een op zichzelf staande behandeling, maar een onderdeel van de therapie. Dit wordt altijd overlegt met u als cliënt</u>. Met een naald behandelen we de triggerpoint. Er ontstaat als dit punt geraakt wordt een lokale twitch. Mensen beschrijven dit als een soort schokje. Hierdoor neem de mobiliteit van de spier toe in combinatie met een verbetering van de doorbloeding. Hierdoor neemt het herstelvermogen op de locatie toe.
+		</cms:editable>
+		
+	</cms:template>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/images/van-vliet-fysio-94x128.png" type="image/x-icon">
+        <meta name="description" content="">
+        <title>Services | Dry Needling</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext">
+        <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+        <link rel="stylesheet" href="assets/tether/tether.min.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/puritym/css/style.css">
+        <link rel="stylesheet" href="assets/dropdown-menu/style.light.css">
+        <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    </head>
+
+<body>
+   <cms:embed 'header.html' />
+   
+   <section class="mbr-section mbr-section-nopadding mbr-after-navbar" id="msg-box4-1k" data-rv-view="40" style="background-color: #eae9e1; padding-top: 3rem; padding-bottom: 0rem;">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-lg-8 mbr-inner-padding mbr-table-cell-lg">
+               <h3 class="mbr-section-title display-4 text-xs-center"><u>Dry Needling</u></h3>
+               <div class="lead">
+                  <p><cms:show dry_needling_summary /></p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-lg-4 mbr-table-cell-lg image-size" style="width: 50%;">
+               <div class="mbr-figure"><img src="assets/images/image005-1.jpg"></div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="mbr-section mbr-after-navbar" id="content5-1i" data-rv-view="37" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 3rem;">
+      <div class="container">
+         <cms:show dry_needling_text />
       </div>
    </section>
    <cms:embed "footer.html" />

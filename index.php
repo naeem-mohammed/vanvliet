@@ -10,6 +10,13 @@
        type="text" />
 
 </cms:repeatable>
+
+<cms:editable name='kennis_summary'
+       label="Kennis Summary"
+       type="richtext">
+	   <p>Wij staan voor een uitgebreide anamnese waarin alles wat de klacht in stand houdt uitgevraagd wordt. Kennis leidt tot heldere en logische conclusies.</p>
+	   </cms:editable>
+	   
 </cms:template>
 <!DOCTYPE html>
 <html>
@@ -40,8 +47,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-					<cms:get_custom_field 'home_caption' masterpage='globals.php' />
-					<cms:get_custom_field 'home_summary' masterpage='globals.php' />
+					<h1 class="mbr-section-title display-1"><cms:get_custom_field 'home_caption' masterpage='globals.php' /></h1>
+					<p class="lead"><cms:get_custom_field 'home_summary' masterpage='globals.php' /></p>
 					
 					<div class="mbr-buttons--left"><a class="btn btn-lg btn-secondary-outline fysio-info" href="services.php">Learn More</a> </div>
                 </div>
@@ -60,7 +67,7 @@
                 <div class="card cart-block">
                     <div class="card-block">
                         <h4 class="card-title text-xs-center" >Kennis</h4>
-                        <p class="card-text" >Wij staan voor een uitgebreide anamnese waarin alles wat de klacht in stand houdt uitgevraagd wordt. Kennis leidt tot heldere en logische conclusies.</p>
+                        <p class="card-text" ></p>
                     </div>
                 </div>
             </div>
@@ -96,7 +103,7 @@
     
     <div class="container">
         <h2 class="mbr-section-title display-3 text-xs-center" >Missie</h3>
-        <div class="lead"><p>Wij zijn een eerste lijn fysiotherapie praktijk. Luisteren en een persoonlijke sfeer worden zijn onze sterke kant. Onze missie is <u>het vinden van uw herstel-belemmerende factoren</u>. Onze lichamelijke intakegesprek/onderzoek focust zich niet alleen op uw pijnlijke plek maar onderzoeken ook alles daar omheen. Onze missie is dat u als client zich waarlijk gehoord voelt en niet met twee oefeningen na 20 minuten weer buiten staat.</p></div>
+        <div class="lead"><p><cms:get_custom_field 'mission' masterpage='globals.php' /></p></div>
     <hr/>
 	</div>
 	
@@ -106,7 +113,7 @@
     
     <div class="container">
         <h2 class="mbr-section-title display-3 text-xs-center">Visie</h3>
-        <div class="lead"><p>Met een steeds veranderende zorg waarbij de tijd voor de client steeds korter wordt en de druk steeds hoger is. Wordt het moeilijk om zorg te vinden die aandacht heeft voor u. Door gericht naar uw klacht te vragen en luisteren proberen we uw klacht in-stand-houdenende factoren eruit te halen. Maar ook uw life-style daarin mee te nemen. Dit zodat u na iedere behandeling handvaten heeft om uw lichamelijke klachten aan te pakken.</p></div>
+        <div class="lead"><p><cms:get_custom_field 'vision' masterpage='globals.php' /></p></div>
     <hr/>
 	</div>
 </section>

@@ -1,5 +1,12 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='Brochure' />
+<cms:template title='Brochure'>
+<cms:editable
+  name='brochure_pdf'
+  label='Brochure PDF file'
+  desc='Upload the file here'
+  type='file'>couch/uploads/file/VanVlietFysio_brochure.pdf</cms:editable>
+
+</cms:template>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +33,7 @@
 <section class="mbr-section mbr-section-small" id="content4-h" data-rv-view="165" style="background-color: #eae9e1; padding-top: 6rem; padding-bottom: 0rem;">
 
     <div class="container">
-	<embed src="couch/uploads/file/VanVlietFysio_brochure.pdf" type="application/pdf" width="100%" height="600px" />
+	<embed src="<cms:show brochure_pdf/>" type="application/pdf" width="100%" height="600px" />
 	</div>
   
 </section>

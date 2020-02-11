@@ -2,38 +2,68 @@
     <cms:template title='Contact' >
 	
 	<cms:editable name='d1_1'
-       label="Monday_Morning"
+       label="Monday_Morning_Waddinxveen"
        type="text" />
     <cms:editable name='d1_2'
-       label="Monday_Afternoon"
+       label="Monday_Afternoon_Waddinxveen"
+       type="text" />
+	<cms:editable name='d1_3'
+       label="Monday_Morning_Nieuwerkerk"
+       type="text" />
+    <cms:editable name='d1_4'
+       label="Monday_Afternoon_Nieuwerkerk"
        type="text" />
 	
 	<cms:editable name='d2_1'
-       label="Tuesday_Morning"
+       label="Tuesday_Morning_Waddinxveen"
        type="text" />
     <cms:editable name='d2_2'
-       label="Tuesday_Afternoon"
+       label="Tuesday_Afternoon_Waddinxveen"
+       type="text" />
+	<cms:editable name='d2_3'
+       label="Tuesday_Morning_Nieuwerkerk"
+       type="text" />
+    <cms:editable name='d2_4'
+       label="Tuesday_Afternoon_Nieuwerkerk"
        type="text" />
 	
 	<cms:editable name='d3_1'
-       label="Wednesday_Morning"
+       label="Wednesday_Morning_Waddinxveen"
        type="text" />
     <cms:editable name='d3_2'
-       label="Wednesday_Afternoon"
+       label="Wednesday_Afternoon_Waddinxveen"
+       type="text" />
+	<cms:editable name='d3_3'
+       label="Wednesday_Morning_Nieuwerkerk"
+       type="text" />
+    <cms:editable name='d3_4'
+       label="Wednesday_Afternoon_Nieuwerkerk"
        type="text" />
 	
 	<cms:editable name='d4_1'
-       label="Thursday_Morning"
+       label="Thursday_Morning_Waddinxveen"
        type="text" />
     <cms:editable name='d4_2'
-       label="Thursday_Afternoon"
+       label="Thursday_Afternoon_Waddinxveen"
+       type="text" />
+	<cms:editable name='d4_3'
+       label="Thursday_Morning_Nieuwerkerk"
+       type="text" />
+    <cms:editable name='d4_4'
+       label="Thursday_Afternoon_Nieuwerkerk"
        type="text" />
 	
 	<cms:editable name='d5_1'
-       label="Friday_Morning"
+       label="Friday_Morning_Waddinxveen"
        type="text" />
     <cms:editable name='d5_2'
-       label="Friday_Afternoon"
+       label="Friday_Afternoon_Waddinxveen"
+       type="text" />
+	<cms:editable name='d5_3'
+       label="Friday_Morning_Nieuwerkerk"
+       type="text" />
+    <cms:editable name='d5_4'
+       label="Friday_Afternoon_Nieuwerkerk"
        type="text" />
 	   
 	</cms:template>
@@ -71,8 +101,7 @@
                 <div class="row">
 
                     <div>
-
-                        <div class="col-sm-8">
+                        <div class="col-sm-6">
                             <div data-form-type="formoid">
                                 <h2 class="mbr-section-title display-5 text-xs-left">Contact Us!</h2>
                                 <div data-form-alert="true">
@@ -99,35 +128,52 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <h2 class="mbr-section-title display-5 text-xs-center">Openingstijden</h2>
-
                             <table class="table">
+								<col>
+  <colgroup span="2"></colgroup>
+  <colgroup span="2"></colgroup>
+  <tr>
+    <td></td>
+    <th colspan="2" class="text-xs-center bg-fysio">Waddinxveen</th>
+    <th colspan="2" class="text-xs-center bg-contact">Nieuwerkerk</th>
+  </tr>
                                 <tbody>
                                     <tr>
                                         <th>Maandag</th>
-                                        <td><cms:show d1_1 /></td>
-                                        <td><cms:show d1_2 /></td>
+                                        <td class="bg-fysio"><cms:show d1_1 /></td>
+                                        <td class="bg-fysio"><cms:show d1_2 /></td>
+										<td class="bg-contact"><cms:show d1_3 /></td>
+                                        <td class="bg-contact"><cms:show d1_4 /></td>
                                     </tr>
                                     <tr>
                                         <th>Dinsdag</th>
-                                        <td><cms:show d2_1 /></td>
-                                        <td><cms:show d2_2 /></td>
+                                        <td class="bg-fysio"><cms:show d2_1 /></td>
+                                        <td class="bg-fysio"><cms:show d2_2 /></td>
+										<td class="bg-contact"><cms:show d2_3 /></td>
+                                        <td class="bg-contact"><cms:show d2_4 /></td>
                                     </tr>
                                     <tr>
                                         <th>Woensdag</th>
-                                        <td><cms:show d3_1 /></td>
-                                        <td><cms:show d3_2 /></td>
+                                        <td class="bg-fysio"><cms:show d3_1 /></td>
+                                        <td class="bg-fysio"><cms:show d3_2 /></td>
+										<td class="bg-contact"><cms:show d3_3 /></td>
+                                        <td class="bg-contact"><cms:show d3_4 /></td>
                                     </tr>
                                     <tr>
                                         <th>Donderdag</th>
-                                        <td><cms:show d4_1 /></td>
-                                        <td><cms:show d4_2 /></td>
+                                        <td class="bg-fysio"><cms:show d4_1 /></td>
+                                        <td class="bg-fysio"><cms:show d4_2 /></td>
+										<td class="bg-contact"><cms:show d4_3 /></td>
+                                        <td class="bg-contact"><cms:show d4_4 /></td>
                                     </tr>
                                     <tr>
                                         <th>Vrijdag</th>
-                                        <td><cms:show d5_1 /></td>
-                                        <td><cms:show d5_2 /></td>
+                                        <td class="bg-fysio"><cms:show d5_1 /></td>
+                                        <td class="bg-fysio"><cms:show d5_2 /></td>
+										<td class="bg-contact"><cms:show d5_3 /></td>
+                                        <td class="bg-contact"><cms:show d5_4 /></td>
                                     </tr>
                                 </tbody>
                             </table>
