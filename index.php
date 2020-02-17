@@ -14,7 +14,25 @@
 <cms:editable name='kennis_summary'
        label="Kennis Summary"
        type="richtext">
-	   <p>Wij staan voor een uitgebreide anamnese waarin alles wat de klacht in stand houdt uitgevraagd wordt. Kennis leidt tot heldere en logische conclusies.</p>
+	   Wij staan voor een uitgebreide anamnese waarin alles wat de klacht in stand houdt uitgevraagd wordt. Kennis leidt tot heldere en logische conclusies.
+	   </cms:editable>
+	   
+<cms:editable name='vaardigheid_summary'
+       label="Vaardigheid Summary"
+       type="richtext">
+	   Vaardigheid en precisie in het handelen is van belang om effectieve behandelingen te verzorgen.
+	   </cms:editable>
+	   
+<cms:editable name='echte_zorg_summary'
+       label="Echte Zorg Summary"
+       type="richtext">
+	   Echte zorg kan alleen worden gegeven door aandacht voor de persoon.  Luisteren en observeren is de kracht achter deze missie.
+	   </cms:editable>
+	   
+<cms:editable name='verzekering_summary'
+       label="Verzekering Summary"
+       type="richtext">
+	   Controleer van tevoren of u verzekerd bent voor fysiotherapie. U bent hier ten allen tijden zelf verantwoordelijk voor. Voor meer informatie kunt u contact opnemen met uw zorgverzekeraar.
 	   </cms:editable>
 	   
 </cms:template>
@@ -41,14 +59,16 @@
 <body>
 <cms:embed 'header.html' />
 
-<section class="mbr-section mbr-section-full mbr-parallax-background mbr-after-navbar" id="header2-g" data-rv-view="162" style="background-image: url(assets/images/new-bg-1950x1300.jpg);">
+<section class="mbr-section mbr-section-full mbr-parallax-background mbr-after-navbar" id="header2-g" data-rv-view="162" style="background-image: url(assets/images/new-bg.jpeg);">
     <div class="mbr-table-cell">
         <div class="mbr-overlay" style="opacity: 0.5; background-color: #eae9e1;"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-					<h1 class="mbr-section-title display-1"><cms:get_custom_field 'home_caption' masterpage='globals.php' /></h1>
-					<p class="lead"><cms:get_custom_field 'home_summary' masterpage='globals.php' /></p>
+					<h1 class="mbr-section-title display-1" style="background: rgba(255, 255, 255, 0.6);
+   padding: 10px; "><cms:get_custom_field 'home_caption' masterpage='globals.php' /></h1>
+					<p class="lead" style="background: rgba(255, 255, 255, 0.6);
+   padding: 10px; "><cms:get_custom_field 'home_summary' masterpage='globals.php' /></p>
 					
 					<div class="mbr-buttons--left"><a class="btn btn-lg btn-secondary-outline fysio-info" href="services.php">Learn More</a> </div>
                 </div>
@@ -67,7 +87,7 @@
                 <div class="card cart-block">
                     <div class="card-block">
                         <h4 class="card-title text-xs-center" >Kennis</h4>
-                        <p class="card-text" ></p>
+                        <p class="card-text"><cms:show kennis_summary /></p>
                     </div>
                 </div>
             </div>
@@ -75,7 +95,7 @@
                 <div class="card cart-block">
                     <div class="card-block">
                         <h4 class="card-title text-xs-center" >Vaardigheid</h4>
-                        <p class="card-text" >Vaardigheid en precisie in het handelen is van belang om effectieve behandelingen te verzorgen.</p>
+                        <p class="card-text" ><cms:show vaardigheid_summary /></p>
                     </div>
                 </div>
             </div>
@@ -83,7 +103,7 @@
                 <div class="card cart-block">
                     <div class="card-block">
                         <h4 class="card-title text-xs-center" >Echte zorg</h4>
-                        <p class="card-text" >Echte zorg kan alleen worden gegeven door aandacht voor de persoon.  Luisteren en observeren is de kracht achter deze missie.</p>
+                        <p class="card-text" ><cms:show echte_zorg_summary /></p>
                     </div>
                 </div>
             </div>
@@ -91,7 +111,7 @@
                 <div class="card cart-block">
                     <div class="card-block">
                         <h4 class="card-title text-xs-center" >Verzekering</h4>
-                        <p class="card-text" >Controleer van tevoren of u verzekerd bent voor fysiotherapie. U bent hier ten allen tijden zelf verantwoordelijk voor. Voor meer informatie kunt u contact opnemen met uw zorgverzekeraar.</p>
+                        <p class="card-text" ><cms:show verzekering_summary /></p>
                     </div>
                 </div>
             </div>
