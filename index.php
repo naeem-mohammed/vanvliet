@@ -59,7 +59,7 @@
 <body>
 <cms:embed 'header.html' />
 
-<section class="mbr-section mbr-section-full mbr-parallax-background mbr-after-navbar" id="header2-g" data-rv-view="162" style="background-image: url(assets/images/new-bg.jpeg);">
+<section class="mbr-section mbr-section-full mbr-parallax-background mbr-after-navbar" id="header2-g" data-rv-view="162" style="background-image: url(assets/images/new-bg.jpg);">
     <div class="mbr-table-cell">
         <div class="mbr-overlay" style="opacity: 0.5; background-color: #eae9e1;"></div>
         <div class="container">
