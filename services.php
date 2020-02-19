@@ -6,27 +6,27 @@
 	   
 	   <cms:editable name='service_label_1'
        label="Service Label 1"
-       type="text">Reguliere Zitting</cms:editable>
+       type="text">screening intake onderzoek + behandeling (45 min)</cms:editable>
 	   
 	   <cms:editable name='service_cost_label_1'
        label="Service Cost Label 1"
-       type="text">€34,50 per session</cms:editable>
+       type="text">€69,-</cms:editable>
 	   
 	   <cms:editable name='service_label_2'
        label="Service Label 2"
-       type="text">Consultation</cms:editable>
+       type="text">Behandeling (30 min)</cms:editable>
 	   
 	   <cms:editable name='service_cost_label_2'
        label="Service Cost Label 2"
-       type="text">€34,50 per session</cms:editable>
+       type="text">€40,-</cms:editable>
 	   
 	   <cms:editable name='service_label_3'
        label="Service Label 3"
-       type="text">Speciale Service</cms:editable>
+       type="text">Aan huis behandeling</cms:editable>
 	   
 	   <cms:editable name='service_cost_label_3'
        label="Service Cost Label 3"
-       type="text">€34,50 per session</cms:editable>
+       type="text">€10,- toeslag</cms:editable>
 	   
 </cms:template>
 <!DOCTYPE html>
