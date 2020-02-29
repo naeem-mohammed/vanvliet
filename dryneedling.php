@@ -64,7 +64,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="assets/images/van-vliet-fysio-94x128.png" type="image/x-icon">
         <meta name="description" content="">
-        <title>Services | Dry Needling</title>
+        <title>Dry Needling</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext">
         <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
@@ -78,7 +78,7 @@
 <body>
    <cms:embed 'header.html' />
    
-   <section class="mbr-section mbr-section-nopadding mbr-after-navbar" id="msg-box4-1k" data-rv-view="40" style="background-color: #eae9e1; padding-top: 3rem; padding-bottom: 0rem;">
+   <section class="mbr-section mbr-section-nopadding mbr-after-navbar" id="msg-box4-1k" data-rv-view="40" style="background-color: #f0efea; padding-top: 3rem; padding-bottom: 0rem;">
       <div class="container">
          <div class="row">
             <div class="col-xs-12 col-lg-8 mbr-inner-padding mbr-table-cell-lg">
@@ -93,7 +93,7 @@
          </div>
       </div>
    </section>
-   <section class="mbr-section mbr-after-navbar" id="content5-1i" data-rv-view="37" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 3rem;">
+   <section class="mbr-section mbr-after-navbar" id="content5-1i" data-rv-view="37" style="background-color: #f0efea; padding-top: 0rem; padding-bottom: 3rem;">
       <div class="container">
          <cms:show dry_needling_text />
       </div>

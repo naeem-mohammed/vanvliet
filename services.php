@@ -1,33 +1,40 @@
 <?php require_once( 'couch/cms.php' ); ?>
 <cms:template title='Services'>
-	<cms:editable name='service_summary'
-       label="Service Summary"
-       type="richtext" height='50'>Bent u aanvullend verzekerd, dan gaat de rekening direct naar de zorg verzekeraar. Van Vliet Fysiotherapie is aangesloten bij iedere zorg verzekeraar in Nederland.</cms:editable>
+		<cms:editable name='fysio'
+       label="Fysiotherapie Summary"
+       type="richtext">
+	   Fysio text here
+	   </cms:editable> 
 	   
-	   <cms:editable name='service_label_1'
-       label="Service Label 1"
-       type="text">screening intake onderzoek + behandeling (45 min)</cms:editable>
+	   <cms:editable name='echo'
+       label="Echografie Summary"
+       type="richtext">
+	   Echo text here
+	   </cms:editable> 
 	   
-	   <cms:editable name='service_cost_label_1'
-       label="Service Cost Label 1"
-       type="text">€69,-</cms:editable>
+	   <cms:editable name='osteo'
+       label="Osteopathie Summary"
+       type="richtext">
+	   Osteo text here
+	   </cms:editable> 
 	   
-	   <cms:editable name='service_label_2'
-       label="Service Label 2"
-       type="text">Behandeling (30 min)</cms:editable>
+	   <cms:editable name='oefen'
+       label="Oefentherapie Summary"
+       type="richtext">
+	   Oefen text here
+	   </cms:editable> 
 	   
-	   <cms:editable name='service_cost_label_2'
-       label="Service Cost Label 2"
-       type="text">€40,-</cms:editable>
+	   <cms:editable name='kaaktherapie'
+       label="Kaaktherapie Summary"
+       type="richtext">
+	   Kaak text here
+	   </cms:editable> 
 	   
-	   <cms:editable name='service_label_3'
-       label="Service Label 3"
-       type="text">Aan huis behandeling</cms:editable>
-	   
-	   <cms:editable name='service_cost_label_3'
-       label="Service Cost Label 3"
-       type="text">€10,- toeslag</cms:editable>
-	   
+	   <cms:editable name='dry_needling'
+       label="Dry Needling Summary"
+       type="richtext">
+	   Dry Needling text here
+	   </cms:editable> 
 </cms:template>
 <!DOCTYPE html>
 <html>
@@ -37,7 +44,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/van-vliet-fysio-94x128.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>Services</title>
+  <title>Diensten</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
@@ -51,58 +58,70 @@
 <body>
 <cms:embed 'header.html' />
 
-<section class="mbr-section mbr-after-navbar" id="msg-box3-t" data-rv-view="18" style="background-color: #eae9e1; padding-top: 3rem; padding-bottom: 3rem;">
+<section class="mbr-section mbr-after-navbar" id="msg-box3-t" data-rv-view="18" style="padding-top: 3rem; padding-bottom: 3rem;">
     
     <div class="container" >
         <div class="row text-xs-center">
             <div class="col-sm-8 col-sm-offset-2">
-                <h2 class="mbr-section-title display-3">Onze Services</h2>
-                
-
-                <div class="lead"><p><cms:show service_summary /></p></div>
-                <div class="row"><a class="btn btn-lg btn-secondary-outline fysio-info" href="physiotherapy.php">Fysiotherapie</a> <a class="btn btn-lg btn-secondary-outline fysio-info" href="dryneedling.php">Dry Needling</a>  <a class="btn btn-lg btn-secondary-outline fysio-info" href="contact.php#form1-18">Consult Now!</a></div>
+                <h2 class="mbr-section-title display-3">Diensten</h2>
             </div>
         </div>
     </div>
 </section>
 
-<section class="mbr-section mbr-section-small" id="pricing-table1-14" data-rv-view="199" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 3rem;">
+<section class="mbr-section col-undefined" id="content5-13" data-rv-view="171" style="padding-top: 0rem; padding-bottom: 0rem;" >
     
+    <div class="container">
+        <h2 class="mbr-section-title display-4 text-xs-center" style="color: #6e8b9b">Fysiotherapie</h3>
+        <div class="lead"><cms:show fysio /></div>
+    <hr/>
+	</div>
+</section>
 
-    <div class="container" >
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="card text-xs-center">
-                    <div class="card-header bg-fysio"><cms:show service_label_1 /></div>
-                    <div class="card-block lead">
-                        <span><cms:show service_cost_label_1 /></span>
-                    </div>
-                    <div><ul class="list-group list-group-flush"><li class="list-group-item"><strong>Treatment</strong></li></ul></div>
-                    
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="card text-xs-center">
-                    <div class="card-header bg-fysio"><cms:show service_label_2 /></div>
-                    <div class="card-block lead">
-                        <span><cms:show service_cost_label_2 /></span>
-                    </div>
-                    <div><ul class="list-group list-group-flush"><li class="list-group-item"><strong>Screening</strong></li><li class="list-group-item"><strong>Intake</strong></li><li class="list-group-item"><strong>Onderzoek</strong></li></ul></div>
-                    
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="card text-xs-center">
-                    <div class="card-header bg-fysio"><cms:show service_label_3 /></div>
-                    <div class="card-block lead">
-                        <span><cms:show service_cost_label_3 /></span>
-                    </div>
-                    <div><ul class="list-group list-group-flush"><li class="list-group-item"><strong>Toeslag behandeling aan huis </strong></li></ul></div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="mbr-section col-undefined" id="content5-13" data-rv-view="171" style="padding-top: 0rem; padding-bottom: 0rem;" >
+    
+    <div class="container">
+        <h2 class="mbr-section-title display-4 text-xs-center" style="color: #ccc8c1">Echografie</h3>
+        <div class="lead"><cms:show echo /></div>
+    <hr/>
+	</div>
+</section>
+
+<section class="mbr-section col-undefined" id="content5-13" data-rv-view="171" style="padding-top: 0rem; padding-bottom: 0rem;" >
+    
+    <div class="container">
+        <h2 class="mbr-section-title display-4 text-xs-center" style="color: #a2bfa9">Osteopathie</h3>
+        <div class="lead"><cms:show osteo /></div>
+    <hr/>
+	</div>
+</section>
+
+<section class="mbr-section col-undefined" id="content5-13" data-rv-view="171" style="padding-top: 0rem; padding-bottom: 0rem;" >
+    
+    <div class="container">
+        <h2 class="mbr-section-title display-4 text-xs-center" style="color: #f0efea">Oefentherapie</h3>
+        <div class="lead"><cms:show oefen /></div>
+    <hr/>
+	</div>
+</section>
+
+
+<section class="mbr-section col-undefined" id="content5-13" data-rv-view="171" style="padding-top: 0rem; padding-bottom: 0rem;" >
+    
+    <div class="container">
+        <h2 class="mbr-section-title display-4 text-xs-center" style="color: #dec3c3">Kaaktherapie</h3>
+        <div class="lead"><cms:show kaaktherapie /></div>
+    <hr/>
+	</div>
+</section>
+
+<section class="mbr-section col-undefined" id="content5-13" data-rv-view="171" style="padding-top: 0rem; padding-bottom: 0rem;" >
+    
+    <div class="container">
+        <h2 class="mbr-section-title display-4 text-xs-center">Dry Needling</h3>
+        <div class="lead"><cms:show dry_needling /></div>
+    <hr/>
+	</div>
 </section>
 
 <cms:embed "footer.html" />

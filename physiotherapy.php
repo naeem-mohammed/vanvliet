@@ -30,14 +30,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Site made with Mobirise Website Builder v4.1.2, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v4.1.2, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/van-vliet-fysio-94x128.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>Services | Pysiotherapy</title>
+  <title>Fysiotherapie</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
@@ -47,10 +46,10 @@
   <link rel="stylesheet" href="assets/dropdown-menu/style.light.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 </head>
-<body>
+<body style="color: #6e8b9b">
 <cms:embed 'header.html' />
 
-        <section class="mbr-section mbr-section-nopadding mbr-after-navbar" id="msg-box4-1k" data-rv-view="40" style="background-color: #eae9e1; padding-top: 3rem; padding-bottom: 0rem;">
+        <section class="mbr-section mbr-section-nopadding mbr-after-navbar" id="msg-box4-1k" data-rv-view="40" style="padding-top: 3rem; padding-bottom: 0rem;">
 
             <div class="container">
                 <div class="row">
@@ -68,7 +67,7 @@
             </div>
         </section>
 
-        <section class="mbr-section mbr-after-navbar" id="content5-1i" data-rv-view="37" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 3rem;">
+        <section class="mbr-section mbr-after-navbar" id="content5-1i" data-rv-view="37" style="padding-top: 0rem; padding-bottom: 3rem;">
             <div class="container">
                 <div class="lead">
                     <cms:show fysio_text />

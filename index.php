@@ -61,7 +61,7 @@
 
 <section class="mbr-section mbr-section-full mbr-parallax-background mbr-after-navbar" id="header2-g" data-rv-view="162" style="background-image: url(assets/images/new-bg.jpg);">
     <div class="mbr-table-cell">
-        <div class="mbr-overlay" style="opacity: 0.5; background-color: #eae9e1;"></div>
+        <div class="mbr-overlay" style="opacity: 0.5; background-color: #f0efea;"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -79,7 +79,7 @@
     </div>
 </section>
 
-<section class="mbr-section mbr-section-small" id="content4-h" data-rv-view="165" style="background-color: #eae9e1; padding-top: 3rem; padding-bottom: 0rem;">
+<section class="mbr-section mbr-section-small" id="content4-h" data-rv-view="165" style="background-color: #f0efea; padding-top: 3rem; padding-bottom: 0rem;">
     
     <div class="container">
         <div class="row">
@@ -119,7 +119,7 @@
 		<hr/>
     </div>
 </section>
-<section class="mbr-section col-undefined" id="content5-12" data-rv-view="168" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 0rem;" >
+<section class="mbr-section col-undefined" id="content5-12" data-rv-view="168" style="background-color: #f0efea; padding-top: 0rem; padding-bottom: 0rem;" >
     
     <div class="container">
         <h2 class="mbr-section-title display-3 text-xs-center" >Missie</h3>
@@ -129,7 +129,7 @@
 	
 </section>
 
-<section class="mbr-section col-undefined" id="content5-13" data-rv-view="171" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 0rem;" >
+<section class="mbr-section col-undefined" id="content5-13" data-rv-view="171" style="background-color: #f0efea; padding-top: 0rem; padding-bottom: 0rem;" >
     
     <div class="container">
         <h2 class="mbr-section-title display-3 text-xs-center">Visie</h3>
@@ -138,7 +138,7 @@
 	</div>
 </section>
 
-<section class="mbr-section mbr-section-small" id="testimonials1-u" data-rv-view="174" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 1.5rem;">
+<section class="mbr-section mbr-section-small" id="testimonials1-u" data-rv-view="174" style="background-color: #f0efea; padding-top: 0rem; padding-bottom: 1.5rem;">
     <div>
         
         <div class="container" >
