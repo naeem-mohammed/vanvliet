@@ -12,7 +12,13 @@
 		type='text'>
 		Some text here!
 		</cms:editable>
-					
+	
+		<cms:editable
+    name='osteo_image'
+    label='Osteo Image'
+    desc='Upload image here'
+    type='image'
+/>	
 </cms:template>
 <!DOCTYPE html>
 <html>
@@ -48,7 +54,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-4 mbr-table-cell-lg image-size" style="width: 50%;">
-                        <div class="mbr-figure"><img src="assets/images/image004-1.jpg"></div>
+                        <div class="mbr-figure"><img src="<cms:show osteo_image />" alt="Image will be displayed here"></div>
                     </div>
                 </div>
             </div>

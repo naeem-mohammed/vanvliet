@@ -1,5 +1,23 @@
 <?php require_once( 'couch/cms.php' ); ?>
 <cms:template title='About Us'>
+<cms:editable name='about_us_text'
+       label="About Us Text"
+       type="richtext">
+					About us text here
+	</cms:editable>
+	
+	<cms:editable name='about_us_summary'
+		label="About us Summary"
+		type='text'>
+		Please add text here!
+		</cms:editable>
+		
+	<cms:editable
+    name='about_us_image'
+    label='About Us Image'
+    desc='Upload image here'
+    type='image'
+/>
 </cms:template>
 <!DOCTYPE html>
 <html>
@@ -23,17 +41,31 @@
 <body>
 <cms:embed 'header.html' />
 
-<section class="mbr-section mbr-after-navbar" id="msg-box3-t" data-rv-view="18" style="padding-top: 3rem; padding-bottom: 3rem;">
-    
-    <div class="container" >
-        <div class="row text-xs-center">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h2 class="mbr-section-title display-3">Over Ons</h2>
-               
+<section class="mbr-section mbr-section-nopadding mbr-after-navbar" id="msg-box4-1k" data-rv-view="40" style="padding-top: 3rem; padding-bottom: 0rem;">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-lg-8 mbr-inner-padding text-xs-center mbr-table-cell-lg">
+                        <h3 class="mbr-section-title display-4"><u>Over Ons</u></h3>
+                        <div class="lead">
+                            <p><cms:show about_us_summary /></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-4 mbr-table-cell-lg image-size" style="width: 50%;">
+                        <div class="mbr-figure"><img src="<cms:show about_us_image />" alt="Image will be displayed here"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+
+        <section class="mbr-section mbr-after-navbar" id="content5-1i" data-rv-view="37" style="padding-top: 0rem; padding-bottom: 3rem;">
+            <div class="container">
+                <div class="lead">
+                    <cms:show about_us_text />
+                </div>
+            </div>
+        </section>
 
 <cms:embed "footer.html" />
 
