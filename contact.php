@@ -61,54 +61,56 @@
 
 
 		<cms:editable name='d1_1_2' label="Monday_Morning_Waddinxveen_T2" type="text">
+		10:00 tot 12:30
         </cms:editable>
         <cms:editable name='d1_2_2' label="Monday_Afternoon_Waddinxveen_T2" type="text">
+		13:30 tot 19:00
         </cms:editable>
         <cms:editable name='d1_3_2' label="Monday_Morning_Nieuwerkerk_T2" type="text">
-            08:30 tot 12:30
         </cms:editable>
         <cms:editable name='d1_4_2' label="Monday_Afternoon_Nieuwerkerk_T2" type="text">
-            13:30 tot 17:30
         </cms:editable>
         <cms:editable name='d2_1_2' label="Tuesday_Morning_Waddinxveen_T2" type="text">
-        </cms:editable>
-        <cms:editable name='d2_2_2' label="Tuesday_Afternoon_Waddinxveen_T2" type="text">
-        </cms:editable>
-        <cms:editable name='d2_3_2' label="Tuesday_Morning_Nieuwerkerk_T2" type="text">
 		08:30 tot 12:30
         </cms:editable>
-        <cms:editable name='d2_4_2' label="Tuesday_Afternoon_Nieuwerkerk_T2" type="text">
+        <cms:editable name='d2_2_2' label="Tuesday_Afternoon_Waddinxveen_T2" type="text">
 		13:30 tot 17:30
+        </cms:editable>
+        <cms:editable name='d2_3_2' label="Tuesday_Morning_Nieuwerkerk_T2" type="text">
+        </cms:editable>
+        <cms:editable name='d2_4_2' label="Tuesday_Afternoon_Nieuwerkerk_T2" type="text">
         </cms:editable>
 
         <cms:editable name='d3_1_2' label="Wednesday_Morning_Waddinxveen_T2" type="text">
+		08:30 tot 12:30
         </cms:editable>
         <cms:editable name='d3_2_2' label="Wednesday_Afternoon_Waddinxveen_T2" type="text">
+		13:30 tot 17:30
         </cms:editable>
         <cms:editable name='d3_3_2' label="Wednesday_Morning_Nieuwerkerk_T2" type="text">
-            08:30 tot 12:30
         </cms:editable>
         <cms:editable name='d3_4_2' label="Wednesday_Afternoon_Nieuwerkerk_T2" type="text">
-            13:30 tot 17:30
         </cms:editable>
 
         <cms:editable name='d4_1_2' label="Thursday_Morning_Waddinxveen_T2" type="text">
+		Niet beschikbaar
         </cms:editable>
         <cms:editable name='d4_2_2' label="Thursday_Afternoon_Waddinxveen_T2" type="text">
+		Niet beschikbaar
         </cms:editable>
         <cms:editable name='d4_3_2' label="Thursday_Morning_Nieuwerkerk_T2" type="text">
         </cms:editable>
         <cms:editable name='d4_4_2' label="Thursday_Afternoon_Nieuwerkerk_T2" type="text">
         </cms:editable>
         <cms:editable name='d5_1_2' label="Friday_Morning_Waddinxveen_T2" type="text">
+		08:00 tot 11:00
         </cms:editable>
         <cms:editable name='d5_2_2' label="Friday_Afternoon_Waddinxveen_T2" type="text">
+		12:30 tot 14:00
         </cms:editable>
         <cms:editable name='d5_3_2' label="Friday_Morning_Nieuwerkerk_T2" type="text">
-		08:00 tot 14:00
         </cms:editable>
         <cms:editable name='d5_4_2' label="Friday_Afternoon_Nieuwerkerk_T2" type="text">
-			Closed
         </cms:editable>
     </cms:template>
     <!DOCTYPE html>

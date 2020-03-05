@@ -1,5 +1,5 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='About Us'>
+<cms:template title='About Us - Davey'>
 <cms:editable name='about_us_text'
        label="About Us Text"
        type="richtext">
