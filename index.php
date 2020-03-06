@@ -52,6 +52,8 @@
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/animate.min.css">
+  <link rel="stylesheet" href="assets/bootstrap-dropdownhover.min.css">
   <link rel="stylesheet" href="assets/puritym/css/style.css">
   <link rel="stylesheet" href="assets/dropdown-menu/style.light.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
@@ -70,7 +72,7 @@
 					<p class="lead" style="background: rgba(255, 255, 255, 0.6);
    padding: 10px; "><cms:get_custom_field 'home_summary' masterpage='globals.php' /></p>
 					
-					<div class="mbr-buttons--left"><a class="btn btn-lg btn-secondary-outline fysio-info" href="services.php">Learn More</a> </div>
+					<div class="mbr-buttons--left"><a class="btn btn-lg btn-secondary-outline fysio-info" href="services.php">Leer meer</a> </div>
                 </div>
 			
             </div>
@@ -142,7 +144,7 @@
     <div>
         
         <div class="container" >
-            <h2 class="mbr-section-title display-3 text-xs-center">Wat Onze Fantastische Gebruikers Zeggen</h2>
+            <h2 class="mbr-section-title display-3 text-xs-center">Wat de clienten van de therapie vinden</h2>
 
             <div class="row mbr-testimonial-cards">
 				<cms:show_repeatable 'testimonials' startcount='0' limit='3'>
@@ -170,7 +172,8 @@
   <script src="assets/smooth-scroll/smooth-scroll.js"></script>
   <script src="assets/jarallax/jarallax.js"></script>
   <script src="assets/puritym/js/script.js"></script>
-  <script src="assets/dropdown-menu/script.js"></script>  
+  <script src="assets/dropdown-menu/script.js"></script>
+  <script src="assets/bootstrap-dropdownhover.min.js"></script>
   
 </body>
 </html>

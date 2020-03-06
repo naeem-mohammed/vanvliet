@@ -182,7 +182,7 @@
                             <div class="col-sm-2"></div>
                             <div class="col-sm-10">
                                 <p>
-                                    Click on the therapist below to know their availability:
+                                    Klik op de therapeut voor de actuele beschikbaarheid
                                     <ol>
                                         <li><a style="color: #6e8b9b" href="" id="therapist_1">Davey van vliet</a></li>
                                         <li><a style="color: #6e8b9b" href="" id="therapist_2">Joally Jonker</a></li>
