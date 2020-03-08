@@ -147,16 +147,21 @@
             <h2 class="mbr-section-title display-3 text-xs-center">Wat de clienten van de therapie vinden</h2>
 
             <div class="row mbr-testimonial-cards">
-				<cms:show_repeatable 'testimonials' startcount='0' limit='3'>
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<div class="card">
-							<div class="card-block"><em><cms:show quote /></em></div>
-							<div class="card-footer text-muted">
-								<div><cms:show name /></div>
-								<small></small>
+				<cms:show_repeatable 'testimonials'>
+				<cms:if k_count="1" >
+					<cms:set random_number="<cms:php>echo rand(1, <cms:show k_total_records />);</cms:php>" />
+				</cms:if>
+						<cms:if k_count="<cms:show random_number />" >
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<div class="card">
+									<div class="card-block"><em><cms:show quote /></em></div>
+									<div class="card-footer text-muted">
+										<div><cms:show name /></div>
+										<small></small>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
+						</cms:if>
 				</cms:show_repeatable>
             </div>
         </div>
