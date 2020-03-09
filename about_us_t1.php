@@ -27,7 +27,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/van-vliet-fysio-94x128.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>Over ons</title>
+  <title>Davey van Vliet</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
@@ -49,7 +49,7 @@
                 <div class="row">
 
                     <div class="col-xs-12 col-lg-8 mbr-inner-padding text-xs-center mbr-table-cell-lg">
-                        <h3 class="mbr-section-title display-4"><u>Over Ons</u></h3>
+                        <h3 class="mbr-section-title display-4"><u>Davey van Vliet</u></h3>
                         <div class="lead">
                             <p><cms:show about_us_summary /></p>
                         </div>
