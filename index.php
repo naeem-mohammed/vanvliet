@@ -80,6 +80,16 @@
     </div>
 </section>
 
+<section class="mbr-section" data-rv-view="163" style="background-color: #f0efea; padding-top: 3rem; padding-bottom: 0rem;">
+<div class="container">
+        <div class="row">
+		<div style="text-align: center;" id="promo-video">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/NKgNEIXU_vw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</section>
+
 <section class="mbr-section mbr-section-small" id="content4-h" data-rv-view="165" style="background-color: #f0efea; padding-top: 3rem; padding-bottom: 0rem;">
     
     <div class="container">
@@ -178,6 +188,12 @@
   <script src="assets/puritym/js/script.js"></script>
   <script src="assets/dropdown-menu/script.js"></script>
   <script src="assets/bootstrap-dropdownhover.min.js"></script>
+  <script src="assets/jquery.fitvids.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#promo-video").fitVids();
+  });
+</script>
   
 </body>
 </html>
