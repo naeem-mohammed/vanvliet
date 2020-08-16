@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/van-vliet-fysio-94x128.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>Slideshow</title>
+  <title>Gallery</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
@@ -37,6 +37,15 @@
 <cms:embed 'header.html' />
 
 <section class="mbr-section mbr-section-nopadding mbr-after-navbar" id="msg-box4-1k" data-rv-view="40" style="padding-top: 3rem; padding-bottom: 0rem;">
+<div class="container" style="text-align: -webkit-center;">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12 mbr-inner-padding text-xs-center mbr-table-cell-lg">
+                        <h3 class="mbr-section-title display-4"><u>Gallery</u></h3>
+                    </div>
+                </div>
+            </div>
+</section>
+<section class="mbr-section mbr-section-nopadding" data-rv-view="41" style="padding-top: 3rem; padding-bottom: 0rem;">
 <div id="MiddleCarousel" class="carousel slide UACarousel" data-ride="carousel">
 <ol class="carousel-indicators">
             <cms:show_repeatable 'content_slides'>
@@ -54,7 +63,7 @@
           <iframe width="100%" src="//www.youtube.com/embed/<cms:show youtube_id />" frameborder="0" id="video" allowfullscreen></iframe>
         </cms:if>
       <cms:else />
-      <img class="d-block w-100" src="<cms:show my_image />" alt="" />
+      <img class="d-block" src="<cms:show my_image />" alt="" />
       <div class="carousel-caption">
                 <h4 class=""><cms:show my_heading /></h4>
                 <p class="">

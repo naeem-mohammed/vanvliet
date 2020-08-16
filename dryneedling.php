@@ -54,6 +54,13 @@
 		Nadat de klacht onderzocht is, en er komt naar voren dat een spierblokkade de herstel belemmerende factor is kan dry needling worden toegepast. Symptomen van een spierblokkade zijn verhardingen en/of uitstraling naar de desbetreffende plek (triggerpoint). <u>Let op, dit is nooit een op zichzelf staande behandeling, maar een onderdeel van de therapie. Dit wordt altijd overlegt met u als cliënt</u>. Met een naald behandelen we de triggerpoint. Er ontstaat als dit punt geraakt wordt een lokale twitch. Mensen beschrijven dit als een soort schokje. Hierdoor neem de mobiliteit van de spier toe in combinatie met een verbetering van de doorbloeding. Hierdoor neemt het herstelvermogen op de locatie toe.
 		</cms:editable>
 		
+		<cms:editable
+    name='dry_needling_image'
+    label='Dry Needling Image'
+    desc='Upload image here'
+    type='image'
+/>
+
 	</cms:template>
     <!DOCTYPE html>
     <html>
@@ -90,7 +97,7 @@
                </div>
             </div>
             <div class="col-xs-12 col-lg-4 mbr-table-cell-lg image-size" style="width: 50%;">
-               <div class="mbr-figure"><img src="assets/images/image005-1.jpg"></div>
+			   <div class="mbr-figure"><img src="<cms:show dry_needling_image />" alt="Image will be displayed here"></div>
             </div>
          </div>
       </div>
