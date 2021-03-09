@@ -52,16 +52,17 @@
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/animate.min.css">
+  <link rel="stylesheet" href="assets/bootstrap-dropdownhover.min.css">
   <link rel="stylesheet" href="assets/puritym/css/style.css">
   <link rel="stylesheet" href="assets/dropdown-menu/style.light.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 </head>
 <body>
 <cms:embed 'header.html' />
-
 <section class="mbr-section mbr-section-full mbr-parallax-background mbr-after-navbar" id="header2-g" data-rv-view="162" style="background-image: url(assets/images/new-bg.jpg);">
     <div class="mbr-table-cell">
-        <div class="mbr-overlay" style="opacity: 0.5; background-color: #eae9e1;"></div>
+        <div class="mbr-overlay" style="opacity: 0.5; background-color: #f0efea;"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -70,7 +71,7 @@
 					<p class="lead" style="background: rgba(255, 255, 255, 0.6);
    padding: 10px; "><cms:get_custom_field 'home_summary' masterpage='globals.php' /></p>
 					
-					<div class="mbr-buttons--left"><a class="btn btn-lg btn-secondary-outline fysio-info" href="services.php">Learn More</a> </div>
+					<div class="mbr-buttons--left"><a class="btn btn-lg btn-secondary-outline fysio-info" href="services.php">Leer meer</a> </div>
                 </div>
 			
             </div>
@@ -79,7 +80,17 @@
     </div>
 </section>
 
-<section class="mbr-section mbr-section-small" id="content4-h" data-rv-view="165" style="background-color: #eae9e1; padding-top: 3rem; padding-bottom: 0rem;">
+<section class="mbr-section" data-rv-view="163" style="background-color: #f0efea; padding-top: 3rem; padding-bottom: 0rem;">
+<div class="container">
+        <div class="row">
+		<div style="text-align: center;" id="promo-video">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/NKgNEIXU_vw?&autoplay=1&rel=0&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</section>
+
+<section class="mbr-section mbr-section-small" id="content4-h" data-rv-view="165" style="background-color: #f0efea; padding-top: 3rem; padding-bottom: 0rem;">
     
     <div class="container">
         <div class="row">
@@ -119,7 +130,7 @@
 		<hr/>
     </div>
 </section>
-<section class="mbr-section col-undefined" id="content5-12" data-rv-view="168" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 0rem;" >
+<section class="mbr-section col-undefined" id="content5-12" data-rv-view="168" style="background-color: #f0efea; padding-top: 0rem; padding-bottom: 0rem;" >
     
     <div class="container">
         <h2 class="mbr-section-title display-3 text-xs-center" >Missie</h3>
@@ -129,7 +140,7 @@
 	
 </section>
 
-<section class="mbr-section col-undefined" id="content5-13" data-rv-view="171" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 0rem;" >
+<section class="mbr-section col-undefined" id="content5-13" data-rv-view="171" style="background-color: #f0efea; padding-top: 0rem; padding-bottom: 0rem;" >
     
     <div class="container">
         <h2 class="mbr-section-title display-3 text-xs-center">Visie</h3>
@@ -138,23 +149,28 @@
 	</div>
 </section>
 
-<section class="mbr-section mbr-section-small" id="testimonials1-u" data-rv-view="174" style="background-color: #eae9e1; padding-top: 0rem; padding-bottom: 1.5rem;">
+<section class="mbr-section mbr-section-small" id="testimonials1-u" data-rv-view="174" style="background-color: #f0efea; padding-top: 0rem; padding-bottom: 1.5rem;">
     <div>
         
         <div class="container" >
-            <h2 class="mbr-section-title display-3 text-xs-center">Wat Onze Fantastische Gebruikers Zeggen</h2>
+            <h2 class="mbr-section-title display-3 text-xs-center">Wat de clienten van de therapie vinden</h2>
 
             <div class="row mbr-testimonial-cards">
-				<cms:show_repeatable 'testimonials' startcount='0' limit='3'>
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<div class="card">
-							<div class="card-block"><em><cms:show quote /></em></div>
-							<div class="card-footer text-muted">
-								<div><cms:show name /></div>
-								<small></small>
+				<cms:show_repeatable 'testimonials'>
+				<cms:if k_count="1" >
+					<cms:set random_number="<cms:php>echo rand(1, <cms:show k_total_records />);</cms:php>" />
+				</cms:if>
+						<cms:if k_count="<cms:show random_number />" >
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<div class="card">
+									<div class="card-block"><em><cms:show quote /></em></div>
+									<div class="card-footer text-muted">
+										<div><cms:show name /></div>
+										<small></small>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
+						</cms:if>
 				</cms:show_repeatable>
             </div>
         </div>
@@ -170,7 +186,14 @@
   <script src="assets/smooth-scroll/smooth-scroll.js"></script>
   <script src="assets/jarallax/jarallax.js"></script>
   <script src="assets/puritym/js/script.js"></script>
-  <script src="assets/dropdown-menu/script.js"></script>  
+  <script src="assets/dropdown-menu/script.js"></script>
+  <script src="assets/bootstrap-dropdownhover.min.js"></script>
+  <script src="assets/jquery.fitvids.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#promo-video").fitVids();
+  });
+</script>
   
 </body>
 </html>

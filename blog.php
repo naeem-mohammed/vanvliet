@@ -19,15 +19,15 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="shortcut icon" href="assets/images/van-vliet-fysio-94x128.png" type="image/x-icon">
             <meta name="description" content="">
-            <title>
-                <cms:get_custom_field 'site_name' masterpage='globals.php' /> | Blog >>
-                <cms:show k_page_title />
+            <title> Blog >> <cms:show k_page_title />
             </title>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/animate.min.css">
+  <link rel="stylesheet" href="assets/bootstrap-dropdownhover.min.css">
   <link rel="stylesheet" href="assets/puritym/css/style.css">
   <link rel="stylesheet" href="assets/dropdown-menu/style.light.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
@@ -39,7 +39,7 @@
         <body>
             <cms:embed 'header.html' />
 
-            <section class="mbr-section mbr-section-small mbr-after-navbar" id="msg-box1-1a" data-rv-view="223" style="background-color: #eae9e1; padding-top: 3rem; padding-bottom: 0rem;">
+            <section class="mbr-section mbr-section-small mbr-after-navbar" id="msg-box1-1a" data-rv-view="223" style="background-color: #f0efea; padding-top: 3rem; padding-bottom: 0rem;">
 
                 <div class="container">
                     <div class="row">
@@ -92,7 +92,8 @@
             <script src="assets/smooth-scroll/smooth-scroll.js"></script>
             <script src="assets/jarallax/jarallax.js"></script>
             <script src="assets/puritym/js/script.js"></script>
-			  <script src="assets/dropdown-menu/script.js"></script>  
+			<script src="assets/dropdown-menu/script.js"></script> 
+			<script src="assets/bootstrap-dropdownhover.min.js"></script>			  
         </body>
 
         </html>
